@@ -27,8 +27,10 @@
     ]
   },
   "devDependencies": {
+    "git-scripts": "^0.4.3",
     "gulp-sass": "^4.1.0",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "surge": "^0.21.6"
   },
   "git": {
     "scripts": {
