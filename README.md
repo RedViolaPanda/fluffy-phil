@@ -1,6 +1,7 @@
 # Fluffy Philharmonic
 
 Official website of the Fluffy Philharmonic. Follow along the adventures of our fluffy musicians and their trials and tribulations through the world of classical music.
+Preview site (temporarily for now): http://fluffy-phil.surge.sh/
 
 ## Local development
 
