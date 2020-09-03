@@ -1,0 +1,19 @@
+---
+layout: base.njk
+css: stories
+title: Life at Fluffy Philharmonic
+---
+{% include '_header.njk' %}
+
+<main>
+  <ul class="grid">
+    {%- for post in collections.post -%}
+    <li class="grid__item">
+      <a href="{{ post.url | url }}">
+        <p>{{ post.data.title }}</p>
+        <img src="{{ post.data.image }}" alt="{{ post.data.alt }}">
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</main>
