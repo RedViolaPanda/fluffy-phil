@@ -4,5 +4,14 @@ css: musicians
 title: Musicians
 ---
 <main>
+<h1>{{ title }}</h1>
+
+<p>Much fluff. So love.</p>
+
+<ul>
+  {% for musician in musicians %}  
+  <li>{{ musician.name }}</li>
+  {% endfor %}
+</ul>
 
 </main>

@@ -1,0 +1,62 @@
+[
+  {
+    "name":"Viola",
+    "species":"Red Panda",
+    "mainInstrument":"Violist",
+    "bio":"Art takes time"
+  },
+  {
+    "name":"Taria",
+    "species":"Kitten",
+    "mainInstrument":"Undecided",
+    "bio":"Art takes time"
+  },
+  {
+    "name":"Osca",
+    "species":"Trash Panda",
+    "mainInstrument":"Violinist",
+    "bio":"Art takes time"
+  },
+  {
+    "name":"Arctica",
+    "species":"White Fox",
+    "mainInstrument":"Violinist",
+    "bio":"Art takes time"
+  },
+  {
+    "name":"Mathia",
+    "species":"Polar Bear",
+    "mainInstrument":"Cellist",
+    "bio":"Art takes time"
+  },
+  {
+    "name":"Puff de Papa",
+    "species":"Giant Panda",
+    "mainInstrument":"Pianist",
+    "bio":"Art takes time"
+  },
+  {
+    "name":"Alisa",
+    "species":"Deer",
+    "mainInstrument":"Trumpeter",
+    "bio":"Art takes time"
+  },
+  {
+    "name":"W.A.",
+    "species":"Penguin",
+    "mainInstrument":"Clarinetist",
+    "bio":"Art takes time"
+  },
+  {
+    "name":"Gianluka",
+    "species":"Giraffe",
+    "mainInstrument":"Oboist",
+    "bio":"Art takes time"
+  },
+  {
+    "name":"Hotpot Shiba Friends",
+    "species":"Shibas",
+    "mainInstrument":"Percussionists",
+    "bio":"Art takes time"
+  }
+]

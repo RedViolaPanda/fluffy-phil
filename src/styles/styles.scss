@@ -24,15 +24,15 @@
 }
 
 @font-face {
-  font-family: 'Volkov';
-  src: url('../fonts/volkov-bold.woff2') format('woff2'),
-       url('../fonts/volkov-bold.woff') format('woff');
+  font-family: 'Volkhov';
+  src: url('../fonts/volkhov-bold.woff2') format('woff2'),
+       url('../fonts/volkhov-bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 $base-font: 'Karla', sans-serif;
-$heading-font: 'Volkov', serif;
+$heading-font: 'Volkhov', serif;
 
 // Responsive typography
 $min-width: 320;
