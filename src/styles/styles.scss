@@ -1,5 +1,38 @@
 // Fonts
-$base-font: sans-serif;
+@font-face {
+  font-family: 'Karla';
+  src: url('../fonts/karla-regular.woff2') format('woff2'),
+       url('../fonts/karla-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('../fonts/karla-bold.woff2') format('woff2'),
+       url('../fonts/karla-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('../fonts/karla-italic.woff2') format('woff2'),
+       url('../fonts/karla-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Volkov';
+  src: url('../fonts/volkov-bold.woff2') format('woff2'),
+       url('../fonts/volkov-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+$base-font: 'Karla', sans-serif;
+$heading-font: 'Volkov', serif;
 
 // Responsive typography
 $min-width: 320;
@@ -48,24 +81,6 @@ body {
   flex-direction: column;
 }
 
-header {
-  display: flex;
-  padding: 1rem;
-  align-items: center;
-
-  img {
-    width: 12em;
-  }
-
-  nav {
-    margin-left: auto;
-  }
-
-  a {
-    color: var(--alt);
-  }
-}
-
 main {
   flex: 1;
   padding: 1rem;
@@ -77,6 +92,12 @@ footer {
   align-items: center;
   font-size: 85%;
   padding: 0.25rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $heading-font;
 }
 
 p {
@@ -92,9 +113,69 @@ li {
 a {
   color: currentColor;
   text-decoration: none;
+  border-bottom: 1px dashed currentColor;
 }
 
 img,
 iframe {
   max-width: 100%;
+}
+
+// Shared component styles
+.site-header {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+
+  img {
+    width: 12em;
+  }
+
+  nav {
+    margin-left: auto;
+  }
+
+  a {
+    color: var(--alt);
+    border-bottom: 0;
+    margin-left: 1em;
+  }
+
+  @media screen and (max-width: 39rem) {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    nav {
+      margin-left: initial;
+    }
+
+    img {
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+.site-logo {
+  flex: none;
+}
+
+// Page-specific styles
+.home {
+  
+
+  @media screen and (min-width: 50rem) {
+    .about {
+      display: flex;
+      align-items: center;
+
+      img {
+        flex: 0 0 20em;
+        margin-right: 1em;
+      }
+
+      p {
+        flex: auto;
+      }
+    }
+  }
 }

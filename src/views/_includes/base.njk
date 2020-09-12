@@ -26,12 +26,9 @@
   </head>
 
   <body class="{{ css }}">
+    {% include '_header.njk' %}
     {{ content | safe }}
-
-    <footer>
-      <small>Brought to you by Nonsen & Nonsen</small>
-    </footer>
-    
+    {% include '_footer.njk' %}
     <script src="{{ '/assets/js/scripts.js' | url }}"></script>
   </body>
 </html>
