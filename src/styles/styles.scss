@@ -79,19 +79,13 @@ body {
   color: var(--alt);
   display: flex;
   flex-direction: column;
+  max-width: 60rem;
+  margin: auto;
 }
 
 main {
   flex: 1;
   padding: 1rem;
-}
-
-footer {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  font-size: 85%;
-  padding: 0.25rem;
 }
 
 h1,
@@ -100,14 +94,13 @@ h3 {
   font-family: $heading-font;
 }
 
+h1 {
+  margin-bottom: 0.5rem;
+}
+
 p {
   line-height: 1.33;
   margin-bottom: 1rem;
-}
-
-li {
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
 }
 
 a {
@@ -131,17 +124,24 @@ iframe {
     width: 12em;
   }
 
+  a {
+    border-bottom: 0;
+  }
+
   nav {
     margin-left: auto;
+
+    a {
+      color: var(--alt);
+      margin-left: 1em;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
 
-  a {
-    color: var(--alt);
-    border-bottom: 0;
-    margin-left: 1em;
-  }
-
-  @media screen and (max-width: 39rem) {
+  @media screen and (max-width: 44rem) {
     flex-wrap: wrap;
     justify-content: center;
 
@@ -159,23 +159,142 @@ iframe {
   flex: none;
 }
 
+.site-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem;
+}
+
 // Page-specific styles
 .home {
-  
-
   @media screen and (min-width: 50rem) {
     .about {
       display: flex;
       align-items: center;
 
-      img {
-        flex: 0 0 20em;
+      .about--img {
+        flex: 0 0 50%;
         margin-right: 1em;
       }
 
-      p {
+      .about--txt {
         flex: auto;
       }
+    }
+  }
+}
+
+body.max-width {
+  main {
+    max-width: 48rem;
+    margin: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.gallery {
+  h2 {
+    font-family: $base-font;
+    font-size: 1.15em;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+  }
+
+  li {
+    padding: 0.5rem;
+    max-width: 17rem;
+
+    img {
+      border-radius: 4px;
+      width: 100%;
+    }
+  }
+}
+
+.stories {
+  ul {
+    list-style: none;
+    display: flex;
+
+    img {
+      width: 100%;
+    }
+
+    a {
+      border-bottom: 0;
+    }
+  }
+
+  li {
+    margin: 0.5rem;
+    flex: 0 0 15rem;
+  }
+}
+
+.post {
+  h1 {
+    text-align: center;
+  }
+
+  article {
+  }
+
+  .comic {
+    display: block;
+    margin: 1rem auto;
+  }
+}
+
+.musicians {
+  .heading {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    flex: 12rem;
+    box-shadow: 1px 1px 2px 1px currentColor;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 3px;
+  }
+
+  .musician-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    img {
+      margin-right: 1rem;
+    }
+
+    p {
+      font-style: italic;
+    }
+  }
+
+  @supports (gap: 1rem) {
+    ul {
+      gap: 1rem;
+    }
+
+    li {
+      margin: 0;
     }
   }
 }

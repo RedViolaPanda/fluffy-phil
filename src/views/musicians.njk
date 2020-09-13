@@ -4,14 +4,23 @@ css: musicians
 title: Musicians
 ---
 <main>
-<h1>{{ title }}</h1>
+  <div class="heading">
+    <h1>{{ title }}</h1>
+    <p>Much fluff. So love.</p>
+  </div>
 
-<p>Much fluff. So love.</p>
-
-<ul>
-  {% for musician in musicians %}  
-  <li>{{ musician.name }}</li>
-  {% endfor %}
-</ul>
-
+  <ul>
+    {% for musician in musicians %}  
+    <li>
+      <header class="musician-header">
+        {% musicianImg %}{{ musician.image }}{% endmusicianImg %}
+        <div>
+          <h2>{{ musician.name }}</h2>
+          <p>{{ musician.species }}, {{ musician.mainInstrument }}</p>
+        </div>
+      </header>
+      <p class="musician-bio">{{ musician.bio }}</p>
+    </li>
+    {% endfor %}
+  </ul>
 </main>
