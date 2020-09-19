@@ -58,9 +58,8 @@ $max-font: 24;
 
 // General styles
 :root {
-  --main: #002910;
-  --alt: #e5ab66;
-  --accent: #f7fff7;
+  --main: #f7fff7;
+  --alt: #002910;
 }
 
 * {
@@ -92,15 +91,17 @@ h1,
 h2,
 h3 {
   font-family: $heading-font;
-}
-
-h1 {
   margin-bottom: 0.5rem;
 }
 
+ul,
 p {
   line-height: 1.33;
   margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
 }
 
 a {
@@ -190,11 +191,17 @@ iframe {
       }
     }
   }
+
+  .news {
+    ul {
+      list-style: none;
+    }
+  }
 }
 
 body.max-width {
   main {
-    max-width: 48rem;
+    max-width: 40rem;
     margin: auto;
   }
 
@@ -252,7 +259,8 @@ body.max-width {
     text-align: center;
   }
 
-  article {
+  ul {
+    margin-left: 1rem;
   }
 
   .comic {
@@ -261,12 +269,12 @@ body.max-width {
   }
 }
 
-.musicians {
-  .heading {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
+.post-image {
+  box-shadow: 3px 3px 0px 3px powderblue;
+  border-radius: 4px;
+}
 
+.musicians {
   ul {
     list-style: none;
     display: flex;
@@ -278,7 +286,7 @@ body.max-width {
     box-shadow: 1px 1px 2px 1px currentColor;
     padding: 1rem;
     margin: 0.5rem;
-    border-radius: 3px;
+    border-radius: 4px;
   }
 
   .musician-header {

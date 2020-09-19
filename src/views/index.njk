@@ -17,15 +17,24 @@ title: Home
 
   <section class="stories">
     <h3>Latest comic</h3>
-    {%- for post in collections.post | limit(1) -%}
-    <a href="{{ post.url | url }}">
-      {% postImg 'png' %}{{ post.data.image }}{% endpostImg %}
-      <p>{{ post.data.title }}</p>
-    </a>
-    {%- endfor -%}
+    <ul>
+      {%- for post in collections.post | limit(1) -%}
+      <li>
+        <a href="{{ post.url | url }}">
+          {% postImg 'png' %}{{ post.data.image }}{% endpostImg %}
+          <p>{{ post.data.title }}</p>
+        </a>
+      </li>
+      {%- endfor -%}
+    </ul>
   </section>
 
-  <section>
-    <h3>Latest news</h3>
+  <section class="news">
+    <h3>Latest headlines</h3>
+    <ul>
+      {%- for headline in news | limit(4) -%}
+      <li>{{ headline.title }}</li>
+      {%- endfor -%}
+    </ul>
   </section>
 </main>
