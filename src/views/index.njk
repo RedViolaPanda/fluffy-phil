@@ -20,8 +20,12 @@ title: Home
     <ul>
       {%- for post in collections.post | limit(1) -%}
       <li>
+        <a href="{{ post.url | url }}" class="shneeu-wrapper">
+          <div>
+            {% postImg 'png' %}{{ post.data.image }}{% endpostImg %}
+          </div>
+        </a>
         <a href="{{ post.url | url }}">
-          {% postImg 'png' %}{{ post.data.image }}{% endpostImg %}
           <p>{{ post.data.title }}</p>
         </a>
       </li>

@@ -12,13 +12,15 @@ title: Musicians
   <ul>
     {% for musician in musicians %}  
     <li>
-      <header class="musician-header">
-        {% musicianImg %}{{ musician.image }}{% endmusicianImg %}
-        <div>
-          <h2>{{ musician.name }}</h2>
-          <p>{{ musician.species }}, {{ musician.mainInstrument }}</p>
-        </div>
-      </header>
+      <a href="javascript:void(0)">
+        <header class="musician-header">
+          {% musicianImg %}{{ musician.image }}{% endmusicianImg %}
+          <div>
+            <h2>{{ musician.name }}</h2>
+            <p>{{ musician.species }}, {{ musician.mainInstrument }}</p>
+          </div>
+        </header>
+      </a>
     </li>
     {% endfor %}
   </ul>

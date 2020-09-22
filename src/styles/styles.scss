@@ -58,9 +58,12 @@ $max-font: 24;
 
 // General styles
 :root {
-  --main: #f7fff7;
-  --alt: #002910;
-  --accent: #fdf5ec;
+  --main-bg: #f7fff7;
+  --main-fg: #002910;
+  --highlight: powderblue;
+  --shneeu: #e1f8fb;
+  --card-bg1: #fdf5ec;
+  --card-bg2: #ffe;
 }
 
 * {
@@ -75,8 +78,8 @@ html {
 body {
   height: 100%;
   font-family: $base-font;
-  background-color: var(--main);
-  color: var(--alt);
+  background-color: var(--main-bg);
+  color: var(--main-fg);
   display: flex;
   flex-direction: column;
   max-width: 60rem;
@@ -116,7 +119,7 @@ iframe {
   max-width: 100%;
 }
 
-// Shared component styles
+// Site component styles
 .site-header {
   display: flex;
   padding: 1rem;
@@ -135,7 +138,7 @@ iframe {
     margin-left: auto;
 
     a {
-      color: var(--alt);
+      color: var(--main-fg);
       padding: 0.5rem;
       display: inline-block;
       border-bottom: 2px solid transparent;
@@ -149,7 +152,7 @@ iframe {
         position: absolute;
         bottom: 0;
         left: 0;
-        background: linear-gradient(-70deg, transparent 20%, white 0, white 27%, powderblue 0);
+        background: linear-gradient(-70deg, transparent 20%, white 0, white 27%, var(--highlight) 0);
         transform: translateX(-100%);
         transition: transform 200ms ease-in;
         z-index: 0;
@@ -227,30 +230,6 @@ body.max-width {
   }
 }
 
-.gallery {
-  h2 {
-    font-family: $base-font;
-    font-size: 1.15em;
-  }
-
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: center;
-  }
-
-  li {
-    padding: 0.5rem;
-    max-width: 17rem;
-
-    img {
-      border-radius: 4px;
-      width: 100%;
-    }
-  }
-}
-
 .stories {
   ul {
     list-style: none;
@@ -269,6 +248,39 @@ body.max-width {
     margin: 0.5rem;
     flex: 0 0 15rem;
   }
+}
+
+.shneeu-wrapper {
+  box-shadow: 3px 3px 0px 3px var(--highlight);
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.shneeu-wrapper div {
+  overflow: hidden;
+  position: relative;
+  background-color: var(--card-bg2); // todo: take out
+}
+
+.shneeu-wrapper div::before {
+  content: '';
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(-70deg, transparent 20%, white 0, white 27%, var(--shneeu) 0);
+  transform: translateX(-100%);
+  transition: transform 250ms ease-in;
+  z-index: 0;
+}
+
+.shneeu-wrapper:hover div::before {
+  transform: translateX(0);
+}
+
+.shneeu-wrapper div > * {
+  position: relative;
 }
 
 .post {
@@ -297,9 +309,9 @@ body.max-width {
     flex: 12rem;
     padding: 1rem;
     margin: 0.5rem;
-    box-shadow: 3px 3px 0px 3px powderblue;
+    box-shadow: 3px 3px 0px 3px var(--highlight);
     border-radius: 4px;
-    background-color: var(--accent);
+    background-color: var(--card-bg1);
     position: relative;
     overflow: hidden;
   }
@@ -311,7 +323,7 @@ body.max-width {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(-70deg, transparent 20%, white 0, white 27%, #e1f8fb 0);
+    background: linear-gradient(-70deg, transparent 20%, white 0, white 27%, var(--shneeu) 0);
     transform: translateX(-100%);
     transition: transform 250ms ease-in;
     z-index: 0;
@@ -341,7 +353,7 @@ body.max-width {
 
     img {
       margin-right: 1rem;
-      box-shadow: 2px 4px 0px 3px powderblue;
+      box-shadow: 2px 4px 0px 3px var(--highlight);
       border-radius: 50%;
       flex: none;
     }
@@ -362,35 +374,3 @@ body.max-width {
   }
 }
 
-.stories ul a {
-  box-shadow: 3px 3px 0px 3px powderblue;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.shneeu-wrapper div > * {
-  position: relative;
-}
-
-.shneeu-wrapper div {
-  overflow: hidden;
-  position: relative;
-  background-color: #ffe; // todo: take out
-}
-
-.shneeu-wrapper div::before {
-  content: '';
-  width: 200%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(-70deg, transparent 20%, white 0, white 27%, #e1f8fb 0);
-  transform: translateX(-100%);
-  transition: transform 250ms ease-in;
-  z-index: 0;
-}
-  
-.shneeu-wrapper:hover div::before {
-  transform: translateX(0);
-}
