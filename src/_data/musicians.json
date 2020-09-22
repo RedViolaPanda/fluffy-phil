@@ -42,18 +42,25 @@
     "image": "puff"
   },
   {
+    "name":"小花 (Xiaohua)",
+    "species":"Tortoise",
+    "mainInstrument":"Harpsichordist",
+    "bio":"Art takes time",
+    "image": "xiaohua"
+  },
+  {
     "name":"Alisa",
     "species":"Deer",
     "mainInstrument":"Trumpeter",
     "bio":"Art takes time",
-    "image": "placeholder"
+    "image": "alisa"
   },
   {
     "name":"W.A.",
     "species":"Penguin",
     "mainInstrument":"Clarinetist",
     "bio":"Art takes time",
-    "image": "placeholder"
+    "image": "wa"
   },
   {
     "name":"Gianluka",
