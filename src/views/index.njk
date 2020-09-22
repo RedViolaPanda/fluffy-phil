@@ -17,20 +17,16 @@ title: Home
 
   <section class="stories">
     <h3>Latest comic</h3>
-    <ul>
-      {%- for post in collections.post | limit(1) -%}
-      <li>
-        <a href="{{ post.url | url }}" class="shneeu-wrapper">
-          <div>
-            {% postImg 'png' %}{{ post.data.image }}{% endpostImg %}
-          </div>
-        </a>
-        <a href="{{ post.url | url }}">
-          <p>{{ post.data.title }}</p>
-        </a>
-      </li>
-      {%- endfor -%}
-    </ul>
+    {%- for post in collections.post | limit(1) -%}
+    <a href="{{ post.url | url }}" class="shneeu-wrapper highlight">
+      <div>
+        {% postImg 'png' %}{{ post.data.image }}{% endpostImg %}
+      </div>
+    </a>
+    <a href="{{ post.url | url }}">
+      <p>{{ post.data.title }}</p>
+    </a>
+    {%- endfor -%}
   </section>
 
   <section class="news">
