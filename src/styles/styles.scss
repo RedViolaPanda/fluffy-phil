@@ -125,6 +125,7 @@ iframe {
   padding: 1rem;
   align-items: center;
   text-align: center;
+  flex: none;
 
   img {
     width: 12em;
@@ -164,7 +165,7 @@ iframe {
     }
   }
 
-  @media screen and (max-width: 44rem) {
+  @media screen and (max-width: 29rem) {
     flex-wrap: wrap;
     justify-content: center;
 
@@ -193,6 +194,7 @@ iframe {
 .home {
   .about--img {
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   @media screen and (min-width: 50rem) {
