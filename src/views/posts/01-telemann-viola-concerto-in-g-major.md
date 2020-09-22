@@ -1,7 +1,7 @@
 ---
 title: "Telemann Viola Concerto in G Major"
 tags: post
-date: 2020-09-15
+date: 2020-09-20
 layout: posts.njk
 permalink: /{{ title | slug }}/index.html
 image: 01-image
