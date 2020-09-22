@@ -12,10 +12,12 @@ title: Fluffy musical interpretations
   <ul>
     {%- for post in collections.post -%}
     <li>
-      <a href="{{ post.url | url }}">
-        {% postImg 'png' %}{{ post.data.image }}{% endpostImg %}
-        <p>{{ post.data.title }}</p>
+      <a href="#{{ post.url | url }}" class="shneeu-wrapper">
+        <div>
+          {% postImg 'png' %}{{ post.data.image }}{% endpostImg %}
+        </div>
       </a>
+      <p>{{ post.data.title }}</p>
     </li>
     {%- endfor -%}
   </ul>
