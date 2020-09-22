@@ -4,7 +4,7 @@ tags: post
 date: 2020-09-31
 layout: posts.njk
 permalink: /{{ title | slug }}/index.html
-image: 04-image
+image: placeholder
 ---
 
 Artist at work.

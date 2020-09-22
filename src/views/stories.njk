@@ -12,11 +12,7 @@ title: Fluffy musical interpretations
   <ul class="card-grid">
     {%- for post in collections.post -%}
     <li>
-      <a href="{{ post.url | url }}" class="shneeu-wrapper highlight">
-        <div>
-          {% postImg 'png' %}{{ post.data.image }}{% endpostImg %}
-        </div>
-      </a>
+      <a href="{{ post.url | url }}" class="shneeu-wrapper highlight"><div>{% postImg 'png' %}{{ post.data.image }}{% endpostImg %}</div></a>
       <a href="{{ post.url | url }}">
         <p>{{ post.data.title }}</p>
       </a>
