@@ -310,15 +310,28 @@ body.max-width {
     transform: translateX(0);
   }
 
+  @supports (display: grid) {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+      gap: 1em;
+    }
+
+    li {
+      margin: initial;
+    }
+  }
+
   .musician-header {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
 
     img {
       margin-right: 1rem;
-      box-shadow: 3px 5px 0px 3px powderblue;
+      box-shadow: 2px 4px 0px 3px powderblue;
       border-radius: 50%;
+      flex: none;
     }
 
     p {
