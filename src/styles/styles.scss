@@ -303,13 +303,12 @@ body.max-width {
     background: linear-gradient(-70deg, transparent 20%, white 0, white 27%, powderblue 0);
     transform: translateX(-100%);
     transition: transform 250ms ease-in;
-    z-index: -1;
+    z-index: 0;
   }
   
   li:hover::before {
     transform: translateX(0);
   }
-
   @supports (display: grid) {
     ul {
       display: grid;
@@ -326,6 +325,7 @@ body.max-width {
     display: flex;
     align-items: center;
     margin-bottom: 0.25rem;
+    position: relative;
 
     img {
       margin-right: 1rem;
