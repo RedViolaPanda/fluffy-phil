@@ -87,7 +87,7 @@ body {
 }
 
 main {
-  flex: 1;
+  flex: 1 0 auto;
   padding: 1rem;
 }
 
@@ -303,14 +303,11 @@ body.max-width {
 .musicians {
   ul {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
   }
 
   li {
-    flex: 12rem;
+    margin-bottom: 1.5rem;
     padding: 1rem;
-    margin: 0.5rem;
     box-shadow: 3px 3px 0px 3px var(--highlight);
     border-radius: 4px;
     background-color: var(--card-bg1);
@@ -335,43 +332,65 @@ body.max-width {
     transform: translateX(0);
   }
 
-  @supports (display: grid) {
-    ul {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
-      gap: 1em;
-    }
-
-    li {
-      margin: initial;
-    }
-  }
-
   .musician-header {
-    display: flex;
-    align-items: center;
     margin-bottom: 0.25rem;
     position: relative;
+    text-align: center;
 
     img {
-      margin-right: 1rem;
       box-shadow: 2px 4px 0px 3px var(--highlight);
       border-radius: 50%;
-      flex: none;
+      margin-bottom: 1rem;
     }
 
     p {
       font-style: italic;
+      margin-bottom: 0;
     }
   }
 
-  @supports (gap: 1rem) {
+  @media screen and (min-width: 23rem) {
     ul {
-      gap: 1rem;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     li {
-      margin: 0;
+      flex: 12rem;
+    }
+
+    @supports (display: grid) {
+      ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(19em, 1fr));
+        gap: 1em;
+      }
+
+      li {
+        margin: initial;
+      }
+    }
+
+    @supports (gap: 1rem) {
+      ul {
+        gap: 1rem;
+      }
+
+      li {
+        margin: 0;
+      }
+    }
+
+    .musician-header {
+      display: flex;
+      align-items: center;
+      text-align: initial;
+
+      img {
+        margin-right: 1rem;
+        margin-bottom: 0;
+        flex: none;
+      }
     }
   }
 }
