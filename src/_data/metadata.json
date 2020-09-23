@@ -1,13 +1,13 @@
 {
   "title": "Fluffy Philharmonic",
-  "url": "https://redviolapanda.netlify.com",
+  "url": "https://fluffy-phil.org",
   "description": "Formed in 2020, when a group of fluffy musician friends realised there were enough of them to form an orchestra. This diverse and fun-loving group are welcoming of new members and is constantly growing. It is no surprise that a fluffy fan club soon followed, because you don't need to play an instrument to love music.",
   "feed": {
     "subtitle": "Online home of the Fluffy Philharmonic",
     "filename": "feed.xml",
     "path": "/feed.xml",
-    "url": "https://redviolapanda.netlify.com/feed.xml",
-    "id": "https://redviolapanda.netlify.com/"
+    "url": "https://fluffy-phil.org/feed.xml",
+    "id": "https://fluffy-phil.org/"
   },
   "author": {
     "name": "RedViolaPanda"
