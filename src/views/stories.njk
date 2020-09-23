@@ -9,7 +9,7 @@ title: Fluffy musical interpretations
     <p>What stories do you think of when you hear these musical pieces?</p>
   </div>
 
-  <ul class="card-grid">
+  <ul class="story-grid">
     {%- for post in collections.post -%}
     <li>
       <a href="{{ post.url | url }}" class="shneeu-wrapper highlight"><div>{% postImg 'png' %}{{ post.data.image }}{% endpostImg %}</div></a>

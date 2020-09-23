@@ -200,40 +200,6 @@ iframe {
   padding: 0.5rem;
 }
 
-// Shared component styles
-@media screen and (min-width: 23rem) {
-  .card-grid {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .card-grid li {
-    flex: 12rem;
-  }
-
-  @supports (display: grid) {
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(19em, 1fr));
-      gap: 1em;
-    }
-
-    .card-grid li {
-      margin: initial;
-    }
-  }
-
-  @supports (gap: 1rem) {
-    .card-grid {
-      gap: 1rem;
-    }
-
-    .card-grid li {
-      margin: 0;
-    }
-  }
-}
-
 .highlight {
   box-shadow: 3px 3px 0 3px var(--highlight);
   border-radius: 4px;
@@ -243,6 +209,11 @@ iframe {
 .home {
   .about--img {
     margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .stories,
+  .news h3 {
     text-align: center;
   }
 
@@ -273,8 +244,9 @@ iframe {
     @supports (display: grid) {
       main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: calc(50% - 0.5em) calc(50% - 0.5em);
         gap: 1em;
+        justify-items: center;
       }
 
       .about {
@@ -322,6 +294,43 @@ body.max-width {
 
     a {
       border-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 23rem) {
+  .story-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .story-grid li {
+    flex: 12rem;
+  }
+
+  @supports (display: grid) {
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+      gap: 1em;
+    }
+
+    .story-grid li {
+      margin: initial;
+    }
+
+    .story-grid li a {
+      width: 100%;
+    }
+  }
+
+  @supports (gap: 1rem) {
+    .story-grid {
+      gap: 1rem;
+    }
+
+    .story-grid li {
+      margin: 0;
     }
   }
 }
@@ -436,3 +445,35 @@ body.max-width {
   }
 }
 
+@media screen and (min-width: 23rem) {
+  .musician-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .musician-grid li {
+    flex: 12rem;
+  }
+
+  @supports (display: grid) {
+    .musician-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+      gap: 1em;
+    }
+
+    .musician-grid li {
+      margin: initial;
+    }
+  }
+
+  @supports (gap: 1rem) {
+    .musician-grid {
+      gap: 1rem;
+    }
+
+    .musician-grid li {
+      margin: 0;
+    }
+  }
+}
