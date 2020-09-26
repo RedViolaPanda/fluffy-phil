@@ -87,6 +87,7 @@ body {
   color: var(--main-fg);
   max-width: 60rem;
   margin: auto;
+  min-width: 20rem;
 }
 
 main {
@@ -128,9 +129,9 @@ iframe {
 
 // Site component styles
 .site-header {
-  display: flex;
+  
   padding: 1rem;
-  align-items: center;
+  
   text-align: center;
   flex: none;
 
@@ -173,18 +174,10 @@ iframe {
   }
 }
 
-@media screen and (max-width: 29rem) {
+@media screen and (min-width: 41.25rem) {
   .site-header {
-    flex-wrap: wrap;
-    justify-content: center;
-
-    nav {
-      margin-left: initial;
-    }
-
-    img {
-      margin-bottom: 0.5em;
-    }
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -539,17 +532,24 @@ body.max-width {
   }
 
   .sticker {
-    display: flex;
     border-bottom: 2px solid var(--main-bg);
     padding-bottom: 2rem;
     margin-bottom: 2rem;
   }
 
-  // .sticker:last-child {
-  //   border-bottom: 0;
-  //   margin-bottom: 0;
-  //   padding-bottom: 0;
-  // }
+  .sticker-btn {
+    text-align: right;
+    max-width: calc(250px + 31rem);
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  .sticker {
+    display: flex;
+    border-bottom: 2px solid var(--main-bg);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
 
   .sticker-img {
     width: 250px;
@@ -559,10 +559,5 @@ body.max-width {
   .sticker-meta {
     margin-left: 1rem;
     max-width: 30rem;
-  }
-
-  .sticker-btn {
-    text-align: right;
-    max-width: calc(250px + 31rem);
   }
 }
