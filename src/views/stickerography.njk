@@ -1,0 +1,34 @@
+---
+layout: base.njk
+css: stickerography full-width
+title: Stickerography
+---
+<main>
+  <div class="heading">
+    <h1>{{ title }}</h1>
+  </div>
+
+  <section style="background-color:lightgoldenrodyellow">
+    <div class="max-width">
+      <h2>Prelude</h2>
+      <ul>
+        {% for sticker in stickers %}  
+        <li class="sticker">
+          <div class="sticker-img">
+            <img src="/assets/img/stickers/{{ sticker.slug }}.png" alt="{{ sticker.title }}">
+          </div>
+          <div class="sticker-meta">
+            <h3>{{ sticker.title }}</h3>
+            <p>{{ sticker.date }}</p>
+            <p>{{ sticker.description }}</p>
+            <a class="button-small" href="https://redviolapanda.com/products/{{ sticker.slug }}">Get sticker</a>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="sticker-btn">
+        <a class="button" href="https://redviolapanda.com/products/prelude-sticker-pack">Get pack</a>
+      </div>
+    </div>
+  </section>
+</main>
