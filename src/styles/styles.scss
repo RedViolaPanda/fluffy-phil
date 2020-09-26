@@ -213,6 +213,7 @@ iframe {
   padding: 0.5rem 1rem;
   border: 1px solid currentColor;
   transition: background-color 250ms ease, color 250ms ease;
+  display: inline-block;
 
   &:hover {
     background-color: var(--main-fg);
