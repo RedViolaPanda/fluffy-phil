@@ -68,6 +68,7 @@ $max-font: 24;
   --shneeu: #e1f8fb;
   --card-bg1: #fdf5ec;
   --card-bg2: #ffe;
+  --pack-bg1: lightgoldenrodyellow;
 }
 
 * {
@@ -84,8 +85,6 @@ body {
   font-family: $base-font;
   background-color: var(--main-bg);
   color: var(--main-fg);
-  display: flex;
-  flex-direction: column;
   max-width: 60rem;
   margin: auto;
 }
@@ -99,7 +98,7 @@ h1,
 h2,
 h3 {
   font-family: $heading-font;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 ul {
@@ -205,6 +204,30 @@ iframe {
   border-radius: 4px;
 }
 
+[class^='button'] {
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid currentColor;
+  transition: background-color 250ms ease, color 250ms ease;
+
+  &:hover {
+    background-color: var(--main-fg);
+    color: var(--main-bg);
+  }
+}
+
+.button-small {
+  font-size: 85%;
+}
+
+.u-align-right {
+  text-align: right;
+}
+
+.u-max-width {
+  max-width: 60rem;
+}
+
 // Page-specific styles
 .home {
   .about--img {
@@ -272,6 +295,28 @@ iframe {
         flex: auto;
       }
     }
+  }
+}
+
+body.full-width {
+  max-width: none;
+
+  main {
+    padding: 0;
+  }
+
+  .site-header,
+  .heading {
+    max-width: 60rem;
+    margin: auto;
+  }
+
+  .heading {
+    padding: 1rem;
+  }
+
+  .site-header {
+    justify-content: space-between;
   }
 }
 
@@ -475,5 +520,44 @@ body.max-width {
     .musician-grid li {
       margin: 0;
     }
+  }
+}
+
+.stickerography {
+  section {
+    padding: 1rem 0;
+  }
+  .max-width {
+    max-width: 60rem;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .sticker {
+    display: flex;
+    border-bottom: 2px solid var(--main-bg);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  // .sticker:last-child {
+  //   border-bottom: 0;
+  //   margin-bottom: 0;
+  //   padding-bottom: 0;
+  // }
+
+  .sticker-img {
+    width: 250px;
+    flex: none;
+  }
+
+  .sticker-meta {
+    margin-left: 1rem;
+    max-width: 30rem;
+  }
+
+  .sticker-btn {
+    text-align: right;
+    max-width: calc(250px + 31rem);
   }
 }
