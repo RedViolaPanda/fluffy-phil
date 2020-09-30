@@ -129,9 +129,7 @@ iframe {
 
 // Site component styles
 .site-header {
-  
   padding: 1rem;
-  
   text-align: center;
   flex: none;
 
@@ -241,6 +239,16 @@ iframe {
   .stories a {
     border-bottom: 0;
   }
+
+  .news li {
+    display: flex;
+  }
+
+  .news li::before {
+    content: '🎶';
+    margin-right: 0.5em;
+    font-family: 'Apple Color Emoji', 'Segoe UI Emoji';
+  }
 }
 
 @media screen and (min-width: 47rem) {
@@ -326,6 +334,15 @@ body.max-width {
 
   h1 {
     text-align: center;
+  }
+}
+
+body.page-height-guard {
+  display: flex;
+  flex-direction: column;
+
+  main {
+    flex: 1 0 auto;
   }
 }
 
