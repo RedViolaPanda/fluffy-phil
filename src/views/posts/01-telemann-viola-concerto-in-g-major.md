@@ -5,6 +5,7 @@ date: 2020-09-20
 layout: posts.njk
 permalink: /{{ title | slug }}/index.html
 image: 01-image
+og: 01-og.png
 ---
 {% img2x '/stories/01-comic', 'png', 'Why doesn&apos;t the moon fly away?', 'comic' %}
 

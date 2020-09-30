@@ -2,6 +2,9 @@
   "title": "Fluffy Philharmonic",
   "url": "https://fluffyphil.org",
   "description": "Formed in 2020, when a group of fluffy musician friends realised there were enough of them to form an orchestra. This diverse and fun-loving group are welcoming of new members and is constantly growing. It is no surprise that a fluffy fan club soon followed, because you don't need to play an instrument to love music.",
+  "twitter": "@redviolapanda",
+  "type": "website",
+  "image": "og.png",
   "feed": {
     "subtitle": "Online home of the Fluffy Philharmonic",
     "filename": "feed.xml",

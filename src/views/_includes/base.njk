@@ -9,25 +9,27 @@
     <meta name="description" content="{{ renderData.description or description or metadata.description }}">
     <meta name="author" content="{{ metadata.author.name }}">
 
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
-    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <link rel="stylesheet" href="{{ metadata.url }}/assets/css/styles.css">
+    <link rel="alternate" href="{{ metadata.feed.url }}" type="application/atom+xml" title="{{ metadata.title }}">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicons/apple-touch-icon.png' | url }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicons/favicon-32x32.png' | url }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicons/favicon-16x16.png' | url }}">
-    <link rel="manifest" href="{{ '/assets/favicons/site.webmanifest' | url }}">
-    <link rel="mask-icon" href="{{ '/assets/favicons/safari-pinned-tab.svg' | url }}" color="#002910">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ metadata.url }}/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ metadata.url }}/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ metadata.url }}/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="{{ metadata.url }}/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="{{ metadata.url }}/assets/favicons/safari-pinned-tab.svg" color="#002910">
     <meta name="msapplication-TileColor" content="#ffffee">
     <meta name="theme-color" content="#ffffee">
 
-    <meta property="og:title" content="{{ metadata.title }}" />
-    <meta property="og:url" content="{{ metadata.url }}" />
-    <meta property="og:description" content="{{ renderData.description or description or metadata.description }}" />
-    <meta property="og:image" content="https://fluffyphil.org/assets/img/og.png" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:title" content="{{ renderData.title or title or metadata.title }}">
+    <meta property="og:url" content="{{ metadata.url }}">
+    <meta property="og:image" content="{{ metadata.url }}/assets/img/{{ og or metadata.image }}">
+    <meta property="og:type" content="{{ renderData.type or type or metadata.type }}">
+    <meta property="og:description" content="{{ renderData.description or description or metadata.description }}">
 
-    <meta name="google-site-verification" content="a7_j-Jd-z9HbRXaSCkX-oNiHRkP5CAJ4mbOffHDvV90" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="{{ metadata.twitter }}" />
+
+    <meta name="google-site-verification" content="a7_j-Jd-z9HbRXaSCkX-oNiHRkP5CAJ4mbOffHDvV90">
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
