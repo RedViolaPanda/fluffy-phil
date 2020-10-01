@@ -16,7 +16,7 @@ title: Stickerography
         {% for sticker in stickers %}  
         <li class="sticker">
           <div class="sticker-img">
-            <img src="/assets/img/stickers/{{ sticker.slug }}.png" alt="{{ sticker.title }}">
+            {% stickerImg sticker.alt %}{{ sticker.slug }}{% endstickerImg %}
           </div>
           <div class="sticker-meta">
             <h3>{{ sticker.title }}</h3>
