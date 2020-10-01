@@ -161,6 +161,7 @@ body.max-width {
   }
 }
 
+// pushes the footer to the bottom when the page content is short
 body.page-height-guard {
   display: flex;
   flex-direction: column;
