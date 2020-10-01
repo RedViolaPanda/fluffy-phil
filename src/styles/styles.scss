@@ -128,45 +128,36 @@ iframe {
 }
 
 // Page layout styles
-body.full-width {
+
+// all pages take full-width
+// content takes content max widths inside
+body {
   max-width: none;
 
   main {
     padding: 0;
-  }
-
-  .site-header,
-  .heading {
-    max-width: 60rem;
-    margin: auto;
-  }
-
-  .heading {
-    padding: 1rem;
-  }
-
-  .site-header {
-    justify-content: space-between;
+    // pushes the footer to the bottom when the page content is short
+    min-height: calc(100vh 
+                    - 140px /** header height */
+                    - 2rem /** header padding */ 
+                    - 24px /** footer height */
+                    - 1rem /** footer padding */);
   }
 }
 
-body.max-width {
-  main {
+.horizontal-boundary {
+  margin: auto;
+  padding: 1rem;
+  &--outer {
+  // outer content width
+  // used by nav and page layout
+    max-width: 60rem;
+  }
+  &--content {
+  // reading content width
+  // used by texts or content blocks
     max-width: 40rem;
     margin: auto;
-  }
-
-  h1 {
-    text-align: center;
-  }
-}
-
-body.page-height-guard {
-  display: flex;
-  flex-direction: column;
-
-  main {
-    flex: 1 0 auto;
   }
 }
 
@@ -261,10 +252,6 @@ body.page-height-guard {
 
 .u-align-right {
   text-align: right;
-}
-
-.u-max-width {
-  max-width: 60rem;
 }
 
 .u-sr-only {
@@ -554,11 +541,6 @@ body.page-height-guard {
 .stickerography {
   section {
     padding: 1rem 0;
-  }
-  .max-width {
-    max-width: 60rem;
-    margin: auto;
-    padding: 1rem;
   }
 
   .sticker {
