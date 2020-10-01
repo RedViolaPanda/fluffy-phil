@@ -145,19 +145,20 @@ body {
   }
 }
 
-// outer content width
-// used by nav and page layout
-.horizontal-boundary--outer {
-  max-width: 60rem;
+.horizontal-boundary {
   margin: auto;
   padding: 1rem;
-}
-
-// reading content width
-// used by texts or content blocks
-.horizontal-boundary--content {
-  max-width: 40rem;
-  margin: auto;
+  &--outer {
+  // outer content width
+  // used by nav and page layout
+    max-width: 60rem;
+  }
+  &--content {
+  // reading content width
+  // used by texts or content blocks
+    max-width: 40rem;
+    margin: auto;
+  }
 }
 
 // Site component styles
