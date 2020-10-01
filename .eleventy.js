@@ -12,8 +12,8 @@ module.exports = function(eleventyConfig) {
     return `<img src="/assets/img/${filename}.${ext}" srcset="/assets/img/${filename}@2x.${ext} 2x" alt="${alt ? alt : ''}" class="${classname ? classname : ''}">`
   })
 
-  eleventyConfig.addShortcode('img4w', (filename, ext, alt, classname) => {
-    return `<img src="/assets/img/${filename}-640.${ext}" srcset="/assets/img/${filename}-480.${ext} 480w, /assets/img/${filename}-640.${ext} 640w, /assets/img/${filename}-960.${ext} 960w, /assets/img/${filename}-1280.${ext} 1280w" sizes="(max-width: 400px) 100vw, (max-width: 960px) 75vw, 640px" alt="${alt ? alt : ''}" class="${classname ? classname : ''}">`
+  eleventyConfig.addShortcode('img4w', (filename, ext, alt, width, height, classname) => {
+    return `<img src="/assets/img/${filename}-640.${ext}" srcset="/assets/img/${filename}-480.${ext} 480w, /assets/img/${filename}-640.${ext} 640w, /assets/img/${filename}-960.${ext} 960w, /assets/img/${filename}-1280.${ext} 1280w" sizes="(max-width: 400px) 100vw, (max-width: 960px) 75vw, 640px" alt="${alt ? alt : ''}" class="${classname ? classname : ''}" width="${width}" height="${height}">`
   })
 
   eleventyConfig.addPairedShortcode('postImg', (filename, ext, alt) => {
