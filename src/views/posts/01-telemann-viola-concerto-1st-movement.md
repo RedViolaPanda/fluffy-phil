@@ -1,5 +1,5 @@
 ---
-title: "Telemann Viola Concerto in G Major"
+title: "Telemann Viola Concerto 1st Movement"
 tags: post
 date: 2020-09-20
 layout: posts.njk
@@ -26,7 +26,7 @@ This concerto is the first viola concerto that we know of. Research indicates th
 
 What made him do this? Was it because he liked the instrument? Was it because he wanted a particular tone? We will never know. Whatever it is, however, Telemann does strike us as someone who would go about writing a viola concerto even if no one else had. He also wrote concertos for recorders. In fact, he wrote many of them 😆
 
-What did Telemann have in mind when he wrote the concerto? We will never know either. Telemann did not explicitly state how he meant the piece to be played. Musicians are to present their own interpretations. Here's Viola's version, what is yours?
+What did Telemann have in mind when he wrote the concerto? We will never know either. Telemann did not explicitly state how he meant the piece to be played. Musicians are to present their own interpretations. Here's Viola's version of the 1st movement, what is yours?
 
 ## Explore more...
 
