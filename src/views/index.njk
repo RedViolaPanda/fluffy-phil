@@ -6,7 +6,7 @@ title: Home
 <main>
   <section class="about">
     <div class="about--img">
-      {% img2x 'fluffy-phil', 'png' %}
+      {% img4w 'fluffyphil', 'png', 'The Fluffy Philharmonic' %}
     </div>
 
     <div class="about--txt">
@@ -20,7 +20,7 @@ title: Home
     {%- for post in collections.post | limit(1) -%}
     <a href="{{ post.url | url }}" class="shneeu-wrapper highlight">
       <div>
-        {% postImg 'png' %}{{ post.data.image }}{% endpostImg %}
+        {% postImg 'png', post.data.alt %}{{ post.data.image }}{% endpostImg %}
       </div>
     </a>
     <a href="{{ post.url | url }}">
