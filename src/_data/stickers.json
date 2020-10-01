@@ -4,27 +4,31 @@
     "date":"Sep 2020",
     "series":"Prelude",
     "description": "Meet Viola the red panda. Life was okay, things were chugging along. But one day, everything changed. She met Ginger, the viola. From the first note, Viola knew that Ginger was the instrument for her.",
-    "slug": "have-you-hugged-your-viola-today"
+    "slug": "have-you-hugged-your-viola-today",
+    "alt": "Viola the red panda hugging her beloved viola, Ginger"
   },
   {
     "title":"No E string!",
     "date":"Sep 2020",
     "series":"Prelude",
   "description": "As a recent viola convert, Viola needs to get used to some new facts. The strings start from A not E. D is the _2nd_ string. Tuning the C string by ear is…a new challenge. And if you and your twosetviolin friend ask her “Why the viola?”, she's going to have a word with you.",
-  "slug": "no-e-string"
+  "slug": "no-e-string",
+    "alt": "Viola the red panda perched atop Ginger with an annoyed expression on her face"
   },
   {
     "title":"The “SUPERIOR” instrument?",
     "date":"Sep 2020",
     "series":"Prelude",
     "description": "There really isn't one superior instrument, only one that the musician enjoys playing the most. Viola feels most joyful when playing on Ginger (the viola), a rather understated instrument. But Viola can make it sing with all the warmth and richness befitting a beloved instrument.",
-    "slug": "the-superior-instrument"
+    "slug": "the-superior-instrument",
+    "alt": "Viola the red panda holding up her bow, looking very joyful"
   },
   {
     "title":"Found it!",
     "date":"Sep 2020",
     "series":"Prelude",
     "description": "The story goes… There was a cellist who played one note all the time. One day, his wife asked, “The other members in your orchestra, they all play many notes, why do you only play one note all the time?” The cellist said, “You don't understand, they're looking for the note. I've found it.”",
-    "slug": "found-it"
+    "slug": "found-it",
+    "alt": "Viola the red panda playing a single note"
   }
 ]
