@@ -5,9 +5,10 @@ date: 2020-09-20
 layout: posts.njk
 permalink: /{{ title | slug }}/index.html
 image: 01-image
+alt: Newton on universal gravitation
 og: stories/01-og.png
 ---
-{% img2x '/stories/01-comic', 'png', 'Why doesn&apos;t the moon fly away?', 'comic' %}
+{% img2x '/stories/01-comic', 'png', alt, 'comic' %}
 
 ## G. P. Telemann
 

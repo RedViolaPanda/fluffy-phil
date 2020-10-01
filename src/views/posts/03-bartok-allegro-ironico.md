@@ -5,6 +5,7 @@ date: 2020-09-31
 layout: posts.njk
 permalink: /{{ title | slug }}/index.html
 image: placeholder
+alt: Work in progress, art takes time
 og: placeholder@2x.png
 ---
 
