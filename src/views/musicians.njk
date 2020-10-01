@@ -12,14 +12,14 @@ title: Musicians
   <ul class="musician-grid">
     {% for musician in musicians %}  
     <li class="highlight">
-      <a href="javascript:void(0)">
-        <header class="musician-header">
+      <a href="javascript:void(0)" aria-label="{{ musician.name }}'s profile page">
+        <div class="musician">
           {% musicianImg %}{{ musician.image }}{% endmusicianImg %}
           <div>
             <h2>{{ musician.name }}</h2>
             <p>{{ musician.species }}, {{ musician.mainInstrument }}</p>
           </div>
-        </header>
+        </div>
       </a>
     </li>
     {% endfor %}
