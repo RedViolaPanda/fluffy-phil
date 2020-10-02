@@ -31,10 +31,5 @@
     "gulp-sass": "^4.1.0",
     "node-sass": "^4.14.1",
     "surge": "^0.21.6"
-  },
-  "git": {
-    "scripts": {
-      "pre-push": "surge --project ./dist --domain fluffy-phil.surge.sh"
-    }
   }
 }
