@@ -140,7 +140,8 @@ body {
     padding: 0;
     // pushes the footer to the bottom when the page content is short
     min-height: calc(100vh 
-                    - 140px /** header height */
+                    - 140px /** header logo height */
+                    - 1rem /** added margin in header */
                     - 2rem /** header padding */ 
                     - 24px /** footer height */
                     - 1rem /** footer padding */);
