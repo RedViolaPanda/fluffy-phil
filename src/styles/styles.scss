@@ -327,8 +327,6 @@ body {
   }
 }
 
-
-
 .stories {
   ul {
     img {
@@ -429,6 +427,14 @@ body {
 .musicians {
   ul {
     list-style: none;
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    a {
+      border-bottom: 0;
+    }
   }
 
   li {
@@ -468,7 +474,6 @@ body {
     }
 
     p {
-      font-style: italic;
       margin-bottom: 0;
     }
   }
@@ -479,10 +484,12 @@ body {
       align-items: center;
       text-align: initial;
 
-      img {
+      div:first-of-type {
         margin-right: 1rem;
+      }
+
+      img {
         margin-bottom: 0;
-        flex: none;
       }
     }
   }
@@ -496,27 +503,19 @@ body {
 
   .musician-grid li {
     flex: 12rem;
+    display: flex;
+    align-items: center;
   }
 
   @supports (display: grid) {
     .musician-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
       gap: 1em;
     }
 
     .musician-grid li {
       margin: initial;
-    }
-  }
-
-  @supports (gap: 1rem) {
-    .musician-grid {
-      gap: 1rem;
-    }
-
-    .musician-grid li {
-      margin: 0;
     }
   }
 }

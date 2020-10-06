@@ -14,7 +14,9 @@ title: Musicians
     <li class="highlight">
       <a href="javascript:void(0)" aria-label="{{ musician.name }}'s profile page">
         <div class="musician">
-          {% musicianImg %}{{ musician.image }}{% endmusicianImg %}
+          <div>
+            {% musicianImg %}{{ musician.image }}{% endmusicianImg %}
+          </div>
           <div>
             <h2>{{ musician.name }}</h2>
             <p>{{ musician.species }}, {{ musician.mainInstrument }}</p>
