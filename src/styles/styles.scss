@@ -125,8 +125,6 @@ a {
 img,
 iframe {
   max-width: 100%;
-  margin-bottom: 1rem;
-  display: block;
 }
 
 // Page layout styles
@@ -574,5 +572,12 @@ body {
   .sticker-meta {
     margin-left: 1rem;
     max-width: 30rem;
+  }
+}
+
+.nonsenz {
+  img {
+    margin-bottom: 1rem;
+    display: block;
   }
 }
