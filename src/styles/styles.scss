@@ -1,28 +1,10 @@
 // Fonts
 @font-face {
-  font-family: 'Karla';
-  src: url('../fonts/karla-regular.woff2') format('woff2'),
-       url('../fonts/karla-regular.woff') format('woff');
+  font-family: 'Metro Nova';
+  src: url('../fonts/metro-nova-regular.woff2') format('woff2'),
+       url('../fonts/metro-nova-regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: 'Karla';
-  src: url('../fonts/karla-bold.woff2') format('woff2'),
-       url('../fonts/karla-bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: 'Karla';
-  src: url('../fonts/karla-italic.woff2') format('woff2'),
-       url('../fonts/karla-italic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
   font-display: fallback;
 }
 
@@ -35,7 +17,7 @@
   font-display: fallback;
 }
 
-$base-font: 'Karla', sans-serif;
+$base-font: 'Metro Nova', sans-serif;
 $heading-font: 'Volkhov', serif;
 
 // Responsive typography
