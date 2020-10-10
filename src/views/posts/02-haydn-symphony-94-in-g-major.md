@@ -16,7 +16,7 @@ og: stories/02-og.png
 
 [Franz Joseph Haydn](https://en.wikipedia.org/wiki/Joseph_Haydn) was an Austrian composer in the Classical period. He was one of the most celebrated composers in Europe, and instrumental in the creation of the modern form of chamber music.
 
-He was known for his good character and was very well respected and beloved by his peers. He was a friend and mentor to Mozart, as well as tutor to Beethoven. Haydn spent much of his career as a court musician for the extremely wealthy  Esterházy family and the musicians he presided over lovingly gave him the nickname “Papa” Haydn.
+He was known for his good character and was very well respected and beloved by his peers. He was a friend and mentor to Mozart, as well as tutor to Beethoven. Haydn spent much of his career as a court musician for the extremely wealthy Esterházy family and the musicians he presided over lovingly gave him the nickname “Papa” Haydn.
 
 Described as one of the most playful composers, his sense of humour and love of practical jokes often made their way into his music, with a number of his works containing musical surprises.
 
