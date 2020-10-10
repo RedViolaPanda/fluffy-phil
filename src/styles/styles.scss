@@ -562,3 +562,13 @@ body {
     display: block;
   }
 }
+
+.lost {
+  max-width: 30rem;
+  margin: auto;
+  text-align: center;
+
+  p {
+    text-align: left;
+  }
+}
