@@ -15,9 +15,9 @@ title: Home
     </div>
   </section>
 
-  <section class="stories">
+  <!--<section class="stories">
     <h3>Latest comic</h3>
-    {%- for post in collections.post | limit(1) -%}
+    {%- for post in collections.post | reverse | limit(1)  -%}
     <a href="{{ post.url | url }}" class="shneeu-wrapper highlight">
       <div>
         {% postImg 'png', post.data.alt %}{{ post.data.image }}{% endpostImg %}
@@ -27,6 +27,18 @@ title: Home
       <p>{{ post.data.title }}</p>
     </a>
     {%- endfor -%}
+  </section>-->
+
+  <section class="stories">
+    <h3>Latest comic</h3>
+    <a href="/haydn-symphony-no.-94-in-g-major/" class="shneeu-wrapper highlight">
+      <div>
+        <img src="/assets/img/stories/02-image.png" srcset="/assets/img/stories/02-image@2x.png 2x" alt="Paukenschlag!" class="post-image">
+      </div>
+    </a>
+    <a href="/haydn-symphony-no.-94-in-g-major/">
+      <p>Haydn Symphony No. 94 in G Major</p>
+    </a>
   </section>
 
   <section class="news">
