@@ -1,7 +1,7 @@
 ---
 title: "Rachmaninoff Piano Concerto No. 2 in C Minor"
 tags: post
-date: 2020-09-31
+date: 2020-11-31
 layout: posts.njk
 permalink: /{{ title | slug }}/index.html
 image: placeholder
