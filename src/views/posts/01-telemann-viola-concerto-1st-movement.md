@@ -9,7 +9,7 @@ image: 01-image
 alt: Newton on universal gravitation
 og: stories/01-og.png
 ---
-{% img2x '/stories/01-comic', 'png', alt, 'comic' %}
+{% img2x 'stories/01-comic', 'png', alt, 'comic' %}
 
 ## G. P. Telemann
 
@@ -21,7 +21,7 @@ Another interesting read about Telemann is his [autobiography](https://www.bach-
 
 Telemann was also a printer. He started a printing business and published music for himself and his friends such as Bach and Handel. At the beginning of his entrepreneurship, he did everything by himself, including engraving the types and marketing!
 
-## The viola concerto...
+## The viola concerto…
 
 This concerto is the first viola concerto that we know of. Research indicates that the violin family of instruments were invented to mimic the human voice. Violins were sopranos, cellos were bass, and the violas corresponded to the altos and tenors. Violas were not traditionally meant to be solo instruments. But Telemann wrote a concerto for it anyway.
 
@@ -29,9 +29,9 @@ What made him do this? Was it because he liked the instrument? Was it because he
 
 What did Telemann have in mind when he wrote the concerto? We will never know either. Telemann did not explicitly state how he meant the piece to be played. Musicians are to present their own interpretations. Here's Viola's version of the 1st movement, what is yours?
 
-## Explore more...
+## Explore more…
 
-View the [musical score for the Viola Concerto](<https://imslp.org/wiki/Viola_Concerto%2C_TWV_51:G9_(Telemann%2C_Georg_Philipp)>). If you want to be more hardcore, you can check out [the manuscript version of the score](https://ks.imslp.net/files/imglnks/usimg/7/70/IMSLP219753-PMLP30082-Mus-Ms-1033-47.pdf), and see if you have any interesting discoveries.
+View the [musical score for the Viola Concerto](https://imslp.org/wiki/Viola_Concerto%2C_TWV_51:G9_(Telemann%2C_Georg_Philipp)). If you want to be more hardcore, you can check out [the manuscript version of the score](https://ks.imslp.net/files/imglnks/usimg/7/70/IMSLP219753-PMLP30082-Mus-Ms-1033-47.pdf), and see if you have any interesting discoveries.
 
 ### Recorded performances
 
