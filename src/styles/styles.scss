@@ -531,9 +531,19 @@ body {
     margin-bottom: 2rem;
   }
 
-  .sticker-btn {
-    text-align: right;
+  .sticker-pack {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     max-width: calc(250px + 31rem);
+
+    p {
+      margin-bottom: 0;
+    }
+
+    a {
+      flex: none;
+    }
   }
 }
 
