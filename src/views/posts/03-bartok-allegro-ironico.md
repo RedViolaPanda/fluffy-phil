@@ -1,5 +1,5 @@
 ---
-title: "Bartok Sz. 42 - 30 Gúnydal, Allegro Ironico"
+title: "For Children"
 tags: post
 date: 2020-11-31
 layout: posts.njk
@@ -13,6 +13,8 @@ One of the blob frens grew up playing the piano. Recently, she keeps pulling out
 
 > Each piece is based on a folk tune, Hungarian in the first two volumes (42 pieces), and Slovak in the last two (43 pieces).
 
+## Béla Bartók and "Jeering Song"
+
 Béla Bartók was a Hungarian composer who walked many country roads and mountains with a chunky recording device, and even hand motored power generator, to learn and record folk songs. Aren't you curious what he has to share with us, after hearing so many folk tunes in the Eastern European countrysides. What did the music sound like, without any knowledge or proper training from the Western classical?
 
 Us the two blob friends played No.30 of the Hungarian book together, the _Allegro Ironico_. In our book, it calls it _Wedding Day and Night_, why? Well, we can't tell for sure, but here are our guesses.
@@ -21,11 +23,11 @@ The piece is written in a super fast metre with 2:3 rhythm sequences. In Ottoman
 
 Will a Hungarian wedding be somewhere close with this piece? We don't know. Although, the music sounds very fitting to our imaginary Hungarian friend's wedding scene. In the morning, everybody enjoys the cheerful dance. And at night, the heavy legs and the drunken steps shift heavy beats to the next beat, next next beat, until... next day?
 
-We also don't know where the other name -- jeering song -- came from. It sounds fitting as well. You'll only know if you play it yourself! Who are we mocking in this episode? Take a wild guess?
+We also don't know where the other name - jeering song - came from. It sounds fitting as well. You'll only know if you play it yourself! Who are we mocking in this episode? Take a wild guess?
 
----
+## Explore more...
 
-You might be interested in checking out more children's books, here's our collection:
+### Our children's book bucketlist
 
 - **Béla Bartók - For Children, Sz. 42**  
   [Wikipedia](https://en.wikipedia.org/wiki/For_Children) - [IMSLP](https://imslp.org/wiki/For_Children,_Sz.42_(Bart%C3%B3k,_B%C3%A9la))
@@ -38,7 +40,7 @@ You might be interested in checking out more children's books, here's our collec
 - **Johann Sebastian Bach - The Well-Tempered Clavier, BWV 846-869 & BWV 870-893**  
   [Wikipedia](https://en.wikipedia.org/wiki/The_Well-Tempered_Clavier) - [Book 1 - IMSLP](https://imslp.org/wiki/Das_wohltemperierte_Klavier_I%2C_BWV_846-869_(Bach%2C_Johann_Sebastian)) - [Book 2 - IMSLP](https://imslp.org/wiki/Das_wohltemperierte_Klavier_II,_BWV_870-893_(Bach,_Johann_Sebastian))
 
-Other references
+### Other references
 
 - [Béla Bartók](https://en.wikipedia.org/wiki/B%C3%A9la_Bart%C3%B3k)
 - [Aksak](https://en.wikipedia.org/wiki/Aksak)
