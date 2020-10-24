@@ -1,20 +1,23 @@
 ---
 title: "For Children"
+description: "Béla Bartók was a Hungarian composer who pioneered ethnomusicology. In the first of his children's books, which was based on Hungarian folk tunes, there is a piece originally titled “Gúnydal”, with an interesting 2:3 rhythm sequence. We invite you to explore pops into your mind when you hear this piece."
 tags: post
 date: 2020-11-31
 layout: posts.njk
 permalink: /{{ title | slug }}/index.html
 image: 03-image
-alt: For children
+alt: Bartok Allegro Ironico
 og: stories/03-og.png
 ---
+{% img2x 'stories/03-comic', 'png', alt, 'comic' %}
+
 One of the blob friends grew up playing the piano, and kept pulling out piano albums for children written by famous composers, one after another. Starting from Tchaikovsky, followed by Schumann, Clementi, Bach, and so on.
 
 The other blob friend grew up playing the violin, and had never heard of albums written specifically for children. One day, the violin blob friend ended up playing a rearranged Bartók tune for viola with her teacher and realised that even Bartók wrote not one, but two children's books <span class="kaomoji">(ー_ー )</span>
 
 > Each piece is based on a folk tune, Hungarian in the first two volumes (42 pieces), and Slovak in the last two (43 pieces).
 
-## Béla Bartók and "Jeering Song"
+## Béla Bartók and “Jeering Song”
 
 Béla Bartók was a Hungarian composer who walked many country roads and mountains with a chunky recording device and a hand-motored power generator to learn and record folk songs. Aren't you curious what he has to share with us, after listening to so many folk tunes in the Eastern European countryside? What did those tunes sound like without any influence from the realm of Western classical music?
 
