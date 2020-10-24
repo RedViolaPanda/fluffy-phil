@@ -4,9 +4,9 @@ tags: post
 date: 2020-11-31
 layout: posts.njk
 permalink: /{{ title | slug }}/index.html
-image: placeholder
-alt: Work in progress, art takes time
-og: placeholder@2x.png
+image: 03-image
+alt: For children
+og: stories/03-og.png
 ---
 One of the blob friends grew up playing the piano, and kept pulling out piano albums for children written by famous composers, one after another. Starting from Tchaikovsky, followed by Schumann, Clementi, Bach, and so on.
 
