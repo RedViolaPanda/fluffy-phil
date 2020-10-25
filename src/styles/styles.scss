@@ -129,7 +129,7 @@ iframe {
 
 blockquote {
   position: relative;
-  margin: 2em 1.75rem 2em 1rem;
+  margin: 2rem 1rem 2rem 1.75rem;
   font-size: 1.1em;
   font-style: italic;
 }
@@ -140,6 +140,7 @@ blockquote::after {
   font-size: 3em;
   font-family: Georgia, serif;
   opacity: 0.5;
+  width: 100%;
 }
 
 blockquote::before {
@@ -150,8 +151,7 @@ blockquote::before {
 
 blockquote::after {
   line-height: 0;
-  bottom: 0;
-  right: 0;
+  right: -92.5%;
   content: '\201D';
 }
 
