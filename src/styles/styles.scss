@@ -9,6 +9,24 @@
 }
 
 @font-face {
+  font-family: 'Metro Nova';
+  src: url('../fonts/metro-nova-bold.woff2') format('woff2'),
+       url('../fonts/metro-nova-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Metro Nova';
+  src: url('../fonts/metro-nova-italic.woff2') format('woff2'),
+       url('../fonts/metro-nova-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
   font-family: 'Volkhov';
   src: url('../fonts/volkhov-bold.woff2') format('woff2'),
        url('../fonts/volkhov-bold.woff') format('woff');
@@ -81,7 +99,7 @@ h1,
 h2,
 h3 {
   font-family: $heading-font;
-  margin-bottom: 1rem;
+  margin: 2rem 0 1rem;
 }
 
 ul {
@@ -107,6 +125,38 @@ a {
 img,
 iframe {
   max-width: 100%;
+}
+
+blockquote {
+  position: relative;
+  margin: 2em 1.75rem 2em 1rem;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+blockquote::before,
+blockquote::after {
+  position: absolute;
+  font-size: 3em;
+  font-family: Georgia, serif;
+  opacity: 0.5;
+}
+
+blockquote::before {
+  top: -0.25rem;
+  left: -2rem;
+  content: '\201C';
+}
+
+blockquote::after {
+  line-height: 0;
+  bottom: 0;
+  right: 0;
+  content: '\201D';
+}
+
+blockquote p {
+  width: calc(100% - 1em);
 }
 
 // Page layout styles
@@ -214,6 +264,7 @@ body {
 
 .kaomoji {
   white-space: nowrap;
+  font-family: Arial, sans-serif;
 }
 
 [class^='button'] {
