@@ -140,7 +140,7 @@ blockquote::after {
   font-size: 3em;
   font-family: Georgia, serif;
   opacity: 0.5;
-  width: 100%;
+  width: 1em;
 }
 
 blockquote::before {
@@ -151,7 +151,7 @@ blockquote::before {
 
 blockquote::after {
   line-height: 0;
-  right: -92.5%;
+  left: 92.5%;
   content: '\201D';
 }
 
