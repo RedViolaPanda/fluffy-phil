@@ -420,16 +420,6 @@ body {
       width: 100%;
     }
   }
-
-  @supports (gap: 1rem) {
-    .story-grid {
-      gap: 1rem;
-    }
-
-    .story-grid li {
-      margin: 0;
-    }
-  }
 }
 
 .shneeu-wrapper {
