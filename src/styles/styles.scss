@@ -99,7 +99,12 @@ h1,
 h2,
 h3 {
   font-family: $heading-font;
-  margin: 2rem 0 1rem;
+  margin-bottom: 1rem;
+}
+
+article h2,
+article h3 {
+  margin-top: 2rem;
 }
 
 ul {
