@@ -1,0 +1,44 @@
+---
+layout: base.njk
+css: musician
+---
+<main class="horizontal-boundary horizontal-boundary--content">
+  <h1>{{ title }} the {{ species }}</h1>
+  <article>
+    {{ content | safe }}
+  </article>
+
+  <section>
+    <h2>{{ title }}'s stories</h2>
+    <ul class="story-grid">
+      {%- for post in collections.viola -%}
+      <li>
+        <a href="{{ post.url | url }}" class="shneeu-wrapper highlight"><div>{% postImg 'png', post.data.alt %}{{ post.data.image }}{% endpostImg %}</div></a>
+        <a href="{{ post.url | url }}">
+          <p>{{ post.data.title }}</p>
+        </a>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </section>
+
+  <section>
+    <h2>{{ title }}'s stickers</h2>
+    <ul>
+      {% for sticker in stickers %}  
+        {% if sticker.tag == title | lower %}
+        <li class="sticker">
+          <div class="sticker-img">
+            {% stickerImg sticker.alt %}{{ sticker.slug }}{% endstickerImg %}
+          </div>
+          <div class="sticker-meta">
+            <h3>{{ sticker.title }}</h3>
+            <a class="button-small" href="https://redviolapanda.com/products/{{ sticker.slug }}">Get sticker</a>
+          </div>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+  
+</main>
