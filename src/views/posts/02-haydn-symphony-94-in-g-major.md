@@ -1,7 +1,11 @@
 ---
 title: "Paukenschlag"
 description: "Franz Joseph Haydn was one of the most prolific composers in the Classical period. Described as one of the most playful composers, his sense of humour and love of practical jokes often made their way into his music, with a number of his works containing musical surprises. We especially like his “Surprise” Symphony, were you surprised by it as well?"
-tags: post
+tags: 
+  - post
+  - shibas
+  - taria
+  - osca
 date: 2020-10-11
 layout: posts.njk
 permalink: /{{ title | slug }}/index.html
