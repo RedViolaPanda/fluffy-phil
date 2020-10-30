@@ -21,7 +21,7 @@
     <meta name="theme-color" content="#ffffee">
 
     <meta property="og:title" content="{{ renderData.title or title or metadata.title }}">
-    <meta property="og:url" content="{{ metadata.url }}">
+    <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
     <meta property="og:image" content="{{ metadata.url }}/assets/img/{{ og or metadata.image }}">
     <meta property="og:type" content="{{ renderData.type or type or metadata.type }}">
     <meta property="og:description" content="{{ renderData.description or description or metadata.description }}">
