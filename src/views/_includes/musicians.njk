@@ -4,11 +4,42 @@ css: musician
 ---
 <main class="horizontal-boundary horizontal-boundary--content">
   <h1>{{ title }} the {{ species }}</h1>
-  <article>
-    {{ content | safe }}
-  </article>
+  
+  <section class="profile">
+    <div class="profile-img">
+      {% musicianImg %}{{ image }}{% endmusicianImg %}
+    </div>
+    
+    <div class="profile-info">
+      {{ content | safe }}
+      
+      <hr>
 
-  <section>
+      {% if twitter %}
+        <a class="sm-link" href="https://www.twitter.com/{{ twitter }}">
+          <img src="/assets/img/icons/twitter.svg" alt="" class="sm-icon">
+          {{ twitter }}
+        </a>
+      {% endif %}
+      
+      {% if instagram %}
+      <a class="sm-link" href="https://www.instagram.com/{{ instagram }}">
+        <img src="/assets/img/icons/instagram.svg" alt="" class="sm-icon">
+        {{ instagram }}
+      </a>
+      {% endif %}
+
+      {% if website %}
+      <a class="sm-link" href="{{ website }}">
+        <img src="/assets/img/icons/website.svg" alt="" class="sm-icon">
+        {{ website }}
+      </a>
+      {% endif %}
+    </div>
+  </section>
+
+  {% if collections.viola %}
+  <section class="stories">
     <h2>{{ title }}'s stories</h2>
     <ul class="story-grid">
       {%- for post in collections.viola -%}
@@ -21,24 +52,16 @@ css: musician
       {%- endfor -%}
     </ul>
   </section>
+  {% endif %}
 
-  <section>
+  <section class="stickers">
     <h2>{{ title }}'s stickers</h2>
-    <ul>
+    <div>
       {% for sticker in stickers %}  
         {% if sticker.tag == title | lower %}
-        <li class="sticker">
-          <div class="sticker-img">
-            {% stickerImg sticker.alt %}{{ sticker.slug }}{% endstickerImg %}
-          </div>
-          <div class="sticker-meta">
-            <h3>{{ sticker.title }}</h3>
-            <a class="button-small" href="https://redviolapanda.com/products/{{ sticker.slug }}">Get sticker</a>
-          </div>
-        </li>
+        <a class="sticker" href="https://redviolapanda.com/products/{{ sticker.slug }}">{% stickerImg sticker.alt %}{{ sticker.slug }}{% endstickerImg %}</a>
         {% endif %}
       {% endfor %}
-    </ul>
+    </div>
   </section>
-  
 </main>
