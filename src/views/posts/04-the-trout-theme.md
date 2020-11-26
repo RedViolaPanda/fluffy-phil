@@ -4,7 +4,7 @@ description: "Franz Peter Schubert was an Austrian composer straddling the late 
 tags: 
   - post
   - taria
-  - wg
+  - wa
   - marina
 date: 2020-11-26
 layout: posts.njk
