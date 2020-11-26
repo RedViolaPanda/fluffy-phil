@@ -15,7 +15,7 @@ title: Home
     </div>
   </section>
 
-  <!--<section class="stories">
+  <section class="stories">
     <h3>Latest comic</h3>
     {%- for post in collections.post | reverse | limit(1)  -%}
     <a href="{{ post.url | url }}" class="shneeu-wrapper highlight">
@@ -27,18 +27,6 @@ title: Home
       <p>{{ post.data.title }}</p>
     </a>
     {%- endfor -%}
-  </section>-->
-
-  <section class="stories">
-    <h3>Latest comic</h3>
-    <a href="/for-children/" class="shneeu-wrapper highlight">
-      <div>
-        <img src="/assets/img/stories/03-image.png" srcset="/assets/img/stories/03-image@2x.png 2x" alt="Bartok Allegro Ironico" class="post-image">
-      </div>
-    </a>
-    <a href="/for-children/">
-      <p>For Children</p>
-    </a>
   </section>
 
   <section class="news">

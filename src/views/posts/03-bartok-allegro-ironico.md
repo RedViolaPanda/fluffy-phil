@@ -1,8 +1,14 @@
 ---
 title: "For Children"
 description: "Béla Bartók was a Hungarian composer who pioneered ethnomusicology. In the first of his children's books, which was based on Hungarian folk tunes, there is a piece originally titled “Gúnydal”, with an interesting 2:3 rhythm sequence. We invite you to explore pops into your mind when you hear this piece."
-tags: post
-date: 2020-11-31
+tags: 
+  - post
+  - puff
+  - viola
+  - taria
+  - shibas
+  - osca
+date: 2020-10-31
 layout: posts.njk
 permalink: /{{ title | slug }}/index.html
 image: 03-image
