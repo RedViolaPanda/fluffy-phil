@@ -23,15 +23,17 @@ Arguably one of the most poetic musicians who ever lived, he had a knack for mel
 
 ## About the Trout theme 
 
-_The Trout theme_ originally came from the lied “Die Forelle” (“The Trout”) written by Schubert in 1817. The lyrics in the original lied are from a poem which tells the story of a trout being caught by a fisherman, but in its final stanza reveals its purpose as a moral piece warning young women to guard against young men. However, when Schubert composed the lied, he left out the final stanza, making it purely about "a person's observation of the trout and the reaction to its being caught by a fisherman". Later, upon suggestion by Sylvester Paumgartner of Steyr in Upper Austria, a wealthy music patron and amateur cellist, Schubert wrote a quintet of which the 4th movement is a theme and variations based on The Trout.
+_The Trout theme_ originally came from the lied “Die Forelle” (“The Trout”) written by Schubert in 1817. The lyrics in the original lied are from a poem, which tells the story of a trout being caught by a fisherman, but in its final stanza reveals its purpose as a moral piece warning young women to guard against young men.
 
-The lovely melody later on attracted more composers to work on it. You can hear their versions in the lecture [Inside Chamber Music with Bruce Adolphe: Schubert "Trout" Quintet in A Major, D. 667, Op. 114](https://youtu.be/CULfYiee6MM). In fact, the theme melody is so adorable it should be no surprise that it be used in other places.
+However, when Schubert composed the lied, he left out the final stanza, making it purely about “a person's observation of the trout and the reaction to its being caught by a fisherman”. Later, upon suggestion by Sylvester Paumgartner of Steyr in Upper Austria, a wealthy music patron and amateur cellist, Schubert wrote a quintet of which the 4th movement is a theme and variations based on The Trout.
 
-Not sure if it was because the piece was commissioned by a celist, the theme and variations has a great cello presence in it. Our cellist Marina the otter loves this piece from head to tail. She is also known to love eating fish. Although having a gentle personality as she is, she sometimes gets a bit scared when an agressive fish is caught.
+This lovely melody also attracted later composers to work on it. You can hear their versions in the lecture [Inside Chamber Music with Bruce Adolphe: Schubert “Trout” Quintet in A Major, D. 667, Op. 114](https://youtu.be/CULfYiee6MM). In fact, the theme melody is so adorable that it comes as no surprise it would be used in many other places.
+
+It might be because the piece was commissioned by a cellist (we cannot be sure), but the theme and variations has a great cello presence. Our cellist, Marina the otter, loves this piece from head to tail. She is also known to love eating fish. Even so, her gentle personality can sometimes get startled when an aggressive fish gets caught.
 
 ## Notable performances
 
-Of all the performances of the quintet, the most notable is perhaps the music film documenting _Du Pré_, _Perlman_, _Barenboim_, _Mehta_ and _Zukerman_ playing "The Trout" quintet in the 60s. Performers Perlman and Zukerman are worldly renowned violinists and violist today. Du Pré and Barenboim were once considered a "golden couple" in the classical music community. Unfortunately, cellist Du Pré died in 1987, at age 42. You may not have time for the whole film, then perhaps at least listen to [the fourth movement](https://youtu.be/b8-H0r0iL6Q?t=2252). 
+Of all the performances of the quintet, the most notable is perhaps the music film documenting _Du Pré_, _Perlman_, _Barenboim_, _Mehta_ and _Zukerman_ playing “The Trout” quintet in the 60s. Violinist Perlman and violist Zukerman are both world-renowned musicians today. Du Pré and Barenboim were once considered the “golden couple” in the classical music community. Unfortunately, cellist Du Pré died in 1987, at age 42. If you do not have time for the entire film, at least listen to [the fourth movement](https://youtu.be/b8-H0r0iL6Q?t=2252).
 
 ## References
 
