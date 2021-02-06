@@ -38,11 +38,12 @@ css: musician
     </div>
   </section>
 
-  {% if collections.viola %}
+  {% for tag in collections.tagList %}
+  {% if tag == slug %}
   <section class="stories">
     <h2>{{ title }}'s stories</h2>
     <ul class="story-grid">
-      {%- for post in collections.viola -%}
+      {%- for post in collections[tag] -%}
       <li>
         <a href="{{ post.url | url }}" class="shneeu-wrapper highlight"><div>{% postImg 'png', post.data.alt %}{{ post.data.image }}{% endpostImg %}</div></a>
         <a href="{{ post.url | url }}">
@@ -53,15 +54,25 @@ css: musician
     </ul>
   </section>
   {% endif %}
+  {% endfor %}
 
+  {% set hasStickers = false %}
+  {% for sticker in stickers %}
+    {% if sticker.tag === slug %}{% set hasStickers = true %}{% endif %}
+  {% endfor %}
   <section class="stickers">
+    {% if hasStickers %}
     <h2>{{ title }}'s stickers</h2>
+    {% endif %}
     <div>
       {% for sticker in stickers %}  
-        {% if sticker.tag == title | lower %}
+        {% if sticker.tag == slug %}
         <a class="sticker" href="https://redviolapanda.com/products/{{ sticker.slug }}">{% stickerImg sticker.alt %}{{ sticker.slug }}{% endstickerImg %}</a>
         {% endif %}
       {% endfor %}
     </div>
   </section>
 </main>
+
+
+
