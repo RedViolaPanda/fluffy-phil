@@ -1,8 +1,8 @@
 <header class="site-header horizontal-boundary horizontal-boundary--outer">
   <a class="site-logo" href="/"><img src="{{ site.url }}/assets/img/logo.svg" alt="Fluffy Philharmonic" width=300 height=88 /></a>
   <nav>
-    <a href="/stories">Stories</a>
-    <a href="/musicians">Musicians</a>
-    <a href="/stickerography">Stickerography</a>
+    <a class="{{ 'active' if '/stories' in page.url }}" href="/stories">Stories</a>
+    <a class="{{ 'active' if '/musicians' in page.url }}" href="/musicians">Musicians</a>
+    <a class="{{ 'active' if '/stickerography' in page.url }}" href="/stickerography">Stickerography</a>
   </nav>
 </header>
