@@ -34,5 +34,59 @@
     "slug": "found-it",
     "alt": "Viola the red panda playing a single note",
     "tag": "viola"
+  },
+  {
+    "title":"Play in time!",
+    "date":"Mar 2021",
+    "series":"Musicians",
+    "description": "Meet Taria, the metronomic kitten. Taria has impeccable rhythm and helps Viola keep time while practicing. She is the youngest member at the Fluffy Philharmonic, and has yet to settle on one specific instrument.",
+    "slug": "play-in-time",
+    "alt": "Taria the kitten joyfully wagging her tail after trashing a metronome",
+    "tag": "taria"
+  },
+  {
+    "title":"Warm your soul in the cold Nordic night",
+    "date":"Mar 2021",
+    "series":"Musicians",
+    "description": "Arctica is one of the most highly sought-after soloists but the Fluffy Philharmonic is her most favourite orchestra to play with. Her captivating electric blue eyes and natural elegance inevitably turns heads whenever she enters the room.",
+    "slug": "warm-your-soul-in-the-cold-nordic-night",
+    "alt": "Arctica playing her violin",
+    "tag": "arctica"
+  },
+  {
+    "title":"Two shibas, one rhythm",
+    "date":"Mar 2021",
+    "series":"Musicians",
+    "description": "The Hotpot Shiba Friends are percussionists at the Fluffy Philharmonic. This inseparable pair of shibas are a fan favourite, with a considerable following on FluffTube. Their magic pet, Bola, makes cameos in their videos.",
+    "slug": "two-shibas-one-rhythm",
+    "alt": "The Hotpot Shiba Friends playing the timpani drums together",
+    "tag": "shibas"
+  },
+  {
+    "title":"Flowers are the music of the ground",
+    "date":"Mar 2021",
+    "series":"Musicians",
+    "description": "Xiaohua plays a high-end model huapsichord, called Dahua, which is a harpsichord that sounds like a flower. Xiaohua's positive vibes always give Viola a confidence boost when she gets nervous. He is very focused when playing, and is fully engaged with the rhythm and music.",
+    "slug": "flowers-are-the-music-of-the-ground",
+    "alt": "Xiaohua playing his huapsichord, Dahua",
+    "tag": "xiaohua"
+  },
+  {
+    "title":"You've never heard a trumpet sound like this",
+    "date":"Mar 2021",
+    "series":"Musicians",
+    "description": "Meet Alisa, principal trumpet at the Fluffy Philharmonic. She is an acclaimed trumpeter known for her profound tone and elegant phrasing. Audiences often marvel at her ability to play even the most challenging pieces effortlessly.",
+    "slug": "youve-never-heard-a-trumpet-sound-like-this",
+    "alt": "Alisa sitting on a high stool, playing her trumpet",
+    "tag": "alisa"
+  },
+  {
+    "title":"Sounds better in here, yo",
+    "date":"Mar 2021",
+    "series":"Musicians",
+    "description": "This is Osca, violinist and concertmaster at the Fluffy Philharmonic. He plays in a trashcan for better acoustics. Known for always showing up on time, not a minute early, nor a minute late, thanks to his speedy TrashCar.",
+    "slug": "sounds-better-in-here-yo",
+    "alt": "Osca chilling in his trashcan",
+    "tag": "osca"
   }
 ]

@@ -14,23 +14,33 @@ title: Stickerography
     <div class="horizontal-boundary horizontal-boundary--outer">
       <h2>Prelude</h2>
       <ul>
-        {% for sticker in stickers %}  
-        <li class="sticker">
-          <div class="sticker-img">
-            {% stickerImg sticker.alt %}{{ sticker.slug }}{% endstickerImg %}
-          </div>
-          <div class="sticker-meta">
-            <h3>{{ sticker.title }}</h3>
-            <p>{{ sticker.date }}</p>
-            <p>{{ sticker.description }}</p>
-            <a class="button-small" href="https://redviolapanda.com/products/{{ sticker.slug }}">Get sticker</a>
-          </div>
-        </li>
+        {% for sticker in stickers %}
+        {% if sticker.series === 'Prelude' %}  
+        {% include '_sticker.njk' %}
+        {% endif %}
         {% endfor %}
       </ul>
       <div class="sticker-pack">
         <p>Get all 4 stickers in the Prelude Sticker Pack.</p>
         <a class="button" href="https://redviolapanda.com/products/prelude-sticker-pack">Get pack</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="background-color:honeydew">
+    {# put horizontal boundary inside to accommodate full-width background #}
+    <div class="horizontal-boundary horizontal-boundary--outer">
+      <h2>Musicians</h2>
+      <ul>
+        {% for sticker in stickers %}
+        {% if sticker.series === 'Musicians' %}  
+        {% include '_sticker.njk' %}
+        {% endif %}
+        {% endfor %}
+      </ul>
+      <div class="sticker-pack">
+        <p>Get all 6 stickers in the Musicians Sticker Pack.</p>
+        <a class="button" href="https://redviolapanda.com/products/musicians-sticker-pack">Get pack</a>
       </div>
     </div>
   </section>
