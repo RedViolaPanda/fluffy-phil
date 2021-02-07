@@ -12,10 +12,10 @@ title: Musicians
   <ul class="musician-grid">
     {% for musician in musicians %}  
     <li class="highlight">
-      <a href="javascript:void(0)" aria-label="{{ musician.name }}'s profile page">
+      <a href="/musicians/{{ musician.slug }}" aria-label="{{ musician.name }}'s profile page">
         <div class="musician">
           <div>
-            {% musicianImg %}{{ musician.image }}{% endmusicianImg %}
+            {% musicianImg %}{{ musician.slug }}{% endmusicianImg %}
           </div>
           <div>
             <h2>{{ musician.name }}</h2>

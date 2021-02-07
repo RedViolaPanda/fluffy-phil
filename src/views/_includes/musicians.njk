@@ -1,0 +1,78 @@
+---
+layout: base.njk
+css: musician
+---
+<main class="horizontal-boundary horizontal-boundary--content">
+  <h1>{{ title }} the {{ species }}</h1>
+  
+  <section class="profile">
+    <div class="profile-img">
+      {% musicianImg %}{{ image }}{% endmusicianImg %}
+    </div>
+    
+    <div class="profile-info">
+      {{ content | safe }}
+      
+      <hr>
+
+      {% if twitter %}
+        <a class="sm-link" href="https://www.twitter.com/{{ twitter }}">
+          <img src="/assets/img/icons/twitter.svg" alt="" class="sm-icon">
+          {{ twitter }}
+        </a>
+      {% endif %}
+      
+      {% if instagram %}
+      <a class="sm-link" href="https://www.instagram.com/{{ instagram }}">
+        <img src="/assets/img/icons/instagram.svg" alt="" class="sm-icon">
+        {{ instagram }}
+      </a>
+      {% endif %}
+
+      {% if website %}
+      <a class="sm-link" href="{{ website }}">
+        <img src="/assets/img/icons/website.svg" alt="" class="sm-icon">
+        {{ website }}
+      </a>
+      {% endif %}
+    </div>
+  </section>
+
+  {% for tag in collections.tagList %}
+  {% if tag == slug %}
+  <section class="stories">
+    <h2>{{ title }}'s stories</h2>
+    <ul class="story-grid">
+      {%- for post in collections[tag] -%}
+      <li>
+        <a href="{{ post.url | url }}" class="shneeu-wrapper highlight"><div>{% postImg 'png', post.data.alt %}{{ post.data.image }}{% endpostImg %}</div></a>
+        <a href="{{ post.url | url }}">
+          <p>{{ post.data.title }}</p>
+        </a>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </section>
+  {% endif %}
+  {% endfor %}
+
+  {% set hasStickers = false %}
+  {% for sticker in stickers %}
+    {% if sticker.tag === slug %}{% set hasStickers = true %}{% endif %}
+  {% endfor %}
+  <section class="stickers">
+    {% if hasStickers %}
+    <h2>{{ title }}'s stickers</h2>
+    {% endif %}
+    <div>
+      {% for sticker in stickers %}  
+        {% if sticker.tag == slug %}
+        <a class="sticker" href="https://redviolapanda.com/products/{{ sticker.slug }}">{% stickerImg sticker.alt %}{{ sticker.slug }}{% endstickerImg %}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+</main>
+
+
+

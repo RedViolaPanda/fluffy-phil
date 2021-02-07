@@ -28,6 +28,17 @@ module.exports = function(eleventyConfig) {
     return `<img src="/assets/img/stickers/${filename}.png" srcset="/assets/img/stickers/${filename}@2x.png 2x" alt="${alt ? alt : ''}" class="sticker-image">`;
   });
 
+  eleventyConfig.addCollection('tagList', collection => {
+    const tagsSet = new Set();
+    collection.getAll().forEach(item => {
+      if (!item.data.tags) return;
+      item.data.tags
+        .filter(tag => !['post', 'all'].includes(tag))
+        .forEach(tag => tagsSet.add(tag));
+    });
+    return Array.from(tagsSet).sort();
+  });
+
   return {
     templateFormats: [
       "md",
