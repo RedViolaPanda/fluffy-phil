@@ -3,66 +3,66 @@
     "name":"Viola",
     "species":"Red Panda",
     "mainInstrument":"Violist",
-    "image": "viola"
+    "slug": "viola"
   },
   {
     "name":"Taria",
     "species":"Kitten",
     "mainInstrument":"Undecided",
-    "image": "taria"
+    "slug": "taria"
   },
   {
     "name":"Osca",
     "species":"Trash Panda",
     "mainInstrument":"Violinist",
-    "image": "osca"
+    "slug": "osca"
   },
   {
     "name":"Arctica",
     "species":"White Fox",
     "mainInstrument":"Violinist",
-    "image": "arctica"
+    "slug": "arctica"
   },
   {
     "name":"Mathia",
     "species":"Polar Bear",
     "mainInstrument":"Cellist",
-    "image": "mathia"
+    "slug": "mathia"
   },
   {
     "name":"Puff de Papa",
     "species":"Giant Panda",
     "mainInstrument":"Pianist",
-    "image": "puff"
+    "slug": "puff"
   },
   {
     "name":"小花 (Xiaohua)",
     "species":"Tortoise",
     "mainInstrument":"Harpsichordist",
-    "image": "xiaohua"
+    "slug": "xiaohua"
   },
   {
     "name":"Alisa",
     "species":"Deer",
     "mainInstrument":"Trumpeter",
-    "image": "alisa"
+    "slug": "alisa"
   },
   {
     "name":"W.A.",
     "species":"Penguin",
     "mainInstrument":"Clarinetist",
-    "image": "wa"
+    "slug": "wa"
   },
   {
     "name":"Gianluka",
     "species":"Giraffe",
     "mainInstrument":"Oboist",
-    "image": "gianluka"
+    "slug": "gianluka"
   },
   {
     "name":"Hotpot Shiba Friends",
     "species":"Shibas",
     "mainInstrument":"Percussionists",
-    "image": "shibas"
+    "slug": "shibas"
   }
 ]

@@ -1,7 +1,9 @@
 ---
 title: "Telemann Viola Concerto 1st Movement"
 description: "Georg Philipp Telemann wrote the first viola concerto that we know of. What did Telemann have in mind when he wrote it? We will never know. Telemann did not explicitly state how he meant the piece to be played. Musicians are to present their own interpretations. Here's Viola's version of the 1st movement, what is yours?"
-tags: post
+tags: 
+  - post
+  - viola
 date: 2020-09-20
 layout: posts.njk
 permalink: /{{ title | slug }}/index.html
