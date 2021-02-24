@@ -1,6 +1,6 @@
 ---
 title: "Dawn at Titan's Home"
-description: ""
+description: "Paintings let us see this world the way it used to be, through their artists' interpretations. Sometimes, music lets us hear the world it used to sound like, in pieces like Mahler's First Symphony."
 tags: 
   - post
   - titan
