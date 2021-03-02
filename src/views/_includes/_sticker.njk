@@ -1,0 +1,11 @@
+<li class="sticker">
+  <div class="sticker-img">
+    {% stickerImg sticker.alt %}{{ sticker.slug }}{% endstickerImg %}
+  </div>
+  <div class="sticker-meta">
+    <h3>{{ sticker.title }}</h3>
+    <p>{{ sticker.date }}</p>
+    <p>{{ sticker.description }}</p>
+    <a class="button-small" href="https://redviolapanda.com/products/{{ sticker.slug }}">Get sticker</a>
+  </div>
+</li>
