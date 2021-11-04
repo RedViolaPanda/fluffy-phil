@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-plugin-rss": "^1.1.1",
-    "@babel/core": "^7.14.8",
-    "@babel/preset-env": "^7.14.8",
-    "@babel/register": "^7.14.5"
+    "@11ty/eleventy-plugin-rss": "^1.1.2",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/register": "^7.16.0"
   },
   "babel": {
     "presets": [
@@ -21,15 +21,15 @@
   },
   "devDependencies": {
     "@selfisekai/gulp-sass": "^4.2.0",
-    "autoprefixer": "^10.3.1",
-    "browser-sync": "^2.27.5",
+    "autoprefixer": "^10.4.0",
+    "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "git-scripts": "^0.4.3",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^9.0.0",
-    "postcss": "^8.3.6",
-    "sass": "^1.36.0"
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.3.11",
+    "sass": "^1.43.4"
   }
 }
