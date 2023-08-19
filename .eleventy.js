@@ -4,7 +4,7 @@ const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss")
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./src/assets/fonts": "/assets/fonts" })
   eleventyConfig.addPassthroughCopy({
-    "./src/assets/images": "/assets/images",
+    "./src/assets/img": "/assets/img",
   })
   eleventyConfig.addPassthroughCopy({ "./src/assets/favicons": "/" })
 
@@ -48,11 +48,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addTransform("minify", require("./transforms/jsmin"));
 
   return {
-    templateFormats: [
-      "md",
-      "njk"
-    ],
-    passthroughFileCopy: true,
     dir: {
       input: "src/content", // default: "."
       includes: "../_includes", // default: "_includes"
