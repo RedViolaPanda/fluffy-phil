@@ -10,7 +10,7 @@ excludeFromSitemap: true
   {% set absoluteUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <url>
     <loc>{{ absoluteUrl }}</loc>
-    <lastmod>{{ page.date | rssDate }}</lastmod>
+    <lastmod>{{ page.date | dateToRfc3339 }}</lastmod>
   </url>
 {%- endif %}
 {%- endfor %}
