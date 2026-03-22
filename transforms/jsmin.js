@@ -1,17 +1,11 @@
-const minify = require("terser").minify;
-const extname = require("path").extname;
+import { extname } from "node:path";
+import { minify } from "terser";
 
-const jsmin = async (content, outputPath) => {
+export default async function jsmin(content, outputPath) {
+  if (extname(outputPath) !== ".js") {
+    return content;
+  }
+
   const minified = await minify(content, {});
   return minified.code;
-};
-
-module.exports = async (content, outputPath) => {
-  const ext = extname(outputPath);
-  switch (ext) {
-    case ".js":
-      return jsmin(content, outputPath);
-    default:
-      return content;
-  }
-};
+}
